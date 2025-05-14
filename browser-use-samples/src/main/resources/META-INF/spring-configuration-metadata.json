@@ -1,0 +1,67 @@
+{
+  "properties": [
+    {
+      "name": "browser-use.browser.headless",
+      "type": "java.lang.Boolean",
+      "description": "是否使用无头模式运行浏览器",
+      "defaultValue": false
+    },
+    {
+      "name": "browser-use.browser.keep-alive",
+      "type": "java.lang.Boolean",
+      "description": "任务完成后是否保持浏览器活动状态",
+      "defaultValue": false
+    },
+    {
+      "name": "browser-use.browser.disable-security",
+      "type": "java.lang.Boolean",
+      "description": "是否禁用浏览器安全特性",
+      "defaultValue": false
+    },
+    {
+      "name": "browser-use.context.window-width",
+      "type": "java.lang.Integer",
+      "description": "浏览器窗口宽度",
+      "defaultValue": 1280
+    },
+    {
+      "name": "browser-use.context.window-height",
+      "type": "java.lang.Integer",
+      "description": "浏览器窗口高度",
+      "defaultValue": 900
+    },
+    {
+      "name": "browser-use.context.highlight-elements",
+      "type": "java.lang.Boolean",
+      "description": "是否高亮显示交互元素",
+      "defaultValue": true
+    },
+    {
+      "name": "browser-use.context.viewport-expansion",
+      "type": "java.lang.Integer",
+      "description": "视口扩展像素",
+      "defaultValue": 0
+    },
+    {
+      "name": "app.task.timeout-seconds",
+      "type": "java.lang.Integer",
+      "description": "任务超时时间（秒）",
+      "defaultValue": 300
+    }
+  ],
+  "hints": [
+    {
+      "name": "browser-use.browser.headless",
+      "values": [
+        {
+          "value": true,
+          "description": "使用无头模式（不显示浏览器UI）"
+        },
+        {
+          "value": false,
+          "description": "显示浏览器UI（推荐用于调试）"
+        }
+      ]
+    }
+  ]
+} 
